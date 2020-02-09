@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:id="@+id/text_ekonomi"
+        android:layout_width="181dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center|center_vertical"
+        android:text="Ekonomi"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bid_ekonomi" />
+
+    <TextView
+        android:id="@+id/text_gundem"
+        android:layout_width="181dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center|center_vertical"
+        android:text="Gündem"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:layout_constraintEnd_toStartOf="@+id/text_ekonomi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bid_gundem" />
+
+    <TextView
+        android:id="@+id/text_spor"
+        android:layout_width="181dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="18dp"
+        android:gravity="center|center_vertical"
+        android:text="Spor"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bid_spor" />
+
+    <TextView
+        android:id="@+id/text_egitim"
+        android:layout_width="181dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center|center_vertical"
+        android:text="Eğitim"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:layout_constraintEnd_toStartOf="@+id/text_spor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bid_egitim" />
+
+    <Button
+        android:id="@+id/bid_gundem"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gundem"
+        app:layout_constraintEnd_toStartOf="@+id/bid_ekonomi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bid_ekonomi"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ekonomi"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bid_egitim"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/egitim"
+        app:layout_constraintEnd_toStartOf="@+id/bid_spor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_gundem" />
+
+    <Button
+        android:id="@+id/bid_spor"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/spor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_ekonomi" />
+
+
+</android.support.constraint.ConstraintLayout>
